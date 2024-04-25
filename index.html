@@ -3,95 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>navigation html</title>
+    <title>Yas Waterworld</title>
+    
     <style>
-        *{
+        .about-div {
+            position: relative;
+            margin-top: 10px;
+            padding: 20px;
+        }
+
+        .about-div:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #175a58; 
+            z-index: -1;
+        }
+
+        .about-content {
+            position: relative;
+            color:#ffff;
+            margin-top: 10px;
+            padding: auto 20px;
+        }
+
+        .about-content:after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 0;
+            width: 100%;
+            height: 2%;
+            background-color: rgba(0, 0, 0, 0.911);
+            z-index: -1;
+            padding: 20px auto;
+            
+        }
+
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
-        body{
-            color: white;
-            background-color: #4a154b;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-        #logo{
-            height: 80px;
-            position: relative;
-            top: 14px;
-            left: 140px;
-        }
-        #search{
-            height: 30px;
-            width: auto;
-        }
-        #Features{
-            position: absolute;
-            top: 43px;
-            left: 266px;
 
+        body {
+            font-family: sans-serif;
         }
-        #Solutions{
-            position: absolute;
-            top: 43px;
-            left: 361px;
+
+       header.navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0a5f5c; 
+            padding: 1rem 2rem;
+            position: fixed; 
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10; 
+            color: aliceblue;
         }
-        #Enterprise{
-            position: absolute;
-            top: 43px;
-            left: 460px;
+
+        .fontcolor{
+            color: aliceblue;
         }
-        #resources{
-            position: absolute;
-            top: 43px;
-            left: 561px;
+
+        nav {
+            display: flex;
+            list-style: none; 
         }
-        #Pricing{
-            position: absolute;
-            top: 43px;
-            left: 663px;
+
+        nav a {
+            padding: 0.5rem 1rem; 
+            color: #333; 
+            text-decoration: none;
         }
-        #search{
-            position: absolute;
-            top: 43px;
-            left: 892px;
-            mix-blend-mode: darken;
+
+        .about-content{
+            margin-top: 50px;
         }
-        #sign{
-            position: absolute;
-            top: 43px;
-            left: 951px;
-        }
-        #talk{
-            position: absolute;
-            top: 43px;
-            left: 1020px
-        }
-        #try{
-            position: absolute;
-            top: 43px;
-            left: 1150px;
-        }
-        
     </style>
 </head>
 <body>
-    <nav>
-        <div>
-            <img id="logo" src="https://d34u8crftukxnk.cloudfront.net/slackpress/prod/sites/6/2019-01_BrandRefresh_slack-brand-refresh_unfurl-1.png" alt="">
-            <h4 id="Features">Features</h4>
-            <h4 id="Solutions">Solutions</h4>
-            <h4 id="Enterprise">Enterprise</h4>
-            <h4 id="resources"> Resources</h4>
-            <h4 id="Pricing">Pricing</h4>
-    
-    
+    <header class="navbar">
+        <nav>
+            <a href="#" class="fontcolor">HOME</a>
+            <a href="#" class="fontcolor">ABOUT US</a>
+            <a href="#" class="fontcolor">ZONES</a>
+            <a href="#" class="fontcolor">TICKETS</a>
+            <a href="#" class="fontcolor">FAQS</a>
+        </nav>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsveRjDPDeixDVuIfuU314emGNGq3Vi2cGAnVazde4tg&s" alt="Yas Waterworld Logo" id="img-logo" height="60px">
+    </header>
+    <section id="hero">
+        <img src="https://media1.thrillophilia.com/filestore/0utaa884c1gfuftxep1rl1hioifi_shutterstock_251068204.jpg?w=400&dpr=2" alt="Yas Waterworld Park" id="img-background" width="100%">
+    </section>
+    <section class="about-div">
+        <h1>ABOUT US</h1>
+        <div class="about-content">
+            <h3>Yas Waterworld</h3>
+            <p>Owned by Miral, Yas Waterworld is Abu Dhabi’s premier waterpark offering exhilarating experiences for visitors of all ages. With more than 40 rides, slides, and attractions, Yas Waterworld promises a day filled with aquatic adventures and thrills. The park is inspired by the Emirati heritage and culture, featuring attractions like the world's first hydro-magnetic tornado waterslide and the largest surfable sheet wave in the Middle East.</p>
+            <p>Spread across an area of over 15 hectares, Yas Waterworld boasts a variety of attractions ranging from adrenaline-pumping slides to relaxing lazy rivers. Visitors can explore themed zones like Marah Fortress, Al Raha River, and Dawwama, each offering unique experiences and adventures.</p>
+            <p>Yas Waterworld is renowned for its innovative attractions and commitment to safety and guest satisfaction. Whether you're seeking high-speed thrills or family-friendly fun, Yas Waterworld has something for everyone. Located on Yas Island, Abu Dhabi, Yas Waterworld is a must-visit destination for waterpark enthusiasts and families looking for an unforgettable day of fun in the sun.</p>
         </div>
-        <div>
-            <img id="search" src="https://icon2.cleanpng.com/20190616/kpl/kisspng-portable-network-graphics-computer-icons-clip-art-74-svg-together-icons-for-free-download-uihere-5d06e95f613831.1587763015607340473982.jpg" alt="">
-            <h4 id="sign">Sign in</h4>
-            <button id="talk">TALK TO SALES</button>
-            <button id="try">TRY IT FOR FREE</button>
+        <div class="about-content">
+            <h3>Miral</h3>
+            <p>"Miral is a leading developer in Abu Dhabi, dedicated to creating unique and immersive experiences that enrich the lives of residents and visitors alike. With a diverse portfolio of projects spanning entertainment, hospitality, leisure, and real estate, Miral is committed to shaping the future of Abu Dhabi's tourism and leisure industry. From iconic landmarks like Yas Island and Yas Marina Circuit to world-class attractions such as Ferrari World Abu Dhabi and Yas Waterworld, Miral's developments redefine the standards of excellence and elevate the emirate's status as a global leisure destination. With a focus on innovation, sustainability, and unparalleled guest experiences, Miral continues to drive the growth and transformation of Abu Dhabi's vibrant tourism landscape</p>
         </div>
-    
+    </section>
 </body>
 </html>
